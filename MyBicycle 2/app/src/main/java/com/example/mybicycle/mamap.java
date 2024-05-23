@@ -1,16 +1,12 @@
 package com.example.mybicycle; // Assuming this is your package name
 
-import static android.graphics.Typeface.BOLD;
-
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class mamap extends AppCompatActivity {
