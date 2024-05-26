@@ -26,6 +26,7 @@
         <activity android:name=".MainFrame" android:exported="true"/>
         <activity android:name=".personbalance" android:exported="true"/>
         <activity android:name=".homepage" android:exported="true"/>
+        <activity android:name=".rtn_bicycle" android:exported="true"/>
     </application>
 
 </manifest>
