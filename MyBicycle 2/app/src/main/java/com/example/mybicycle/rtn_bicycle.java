@@ -92,7 +92,7 @@ public class rtn_bicycle extends AppCompatActivity {
                     int estimatedCost = hours > 0 ? hours * 20 : 0;
                     String message = "You have been riding for " + currentTime + ".\nEstimated cost: NT$" + estimatedCost + ".\nAre you ready to return the bike?";
                     alertDialog.setMessage(message);
-                    handler.postDelayed(this, 1000); // Update every second
+                    handler.postDelayed(this, 10); // Update every second
                 }
             }
         };
