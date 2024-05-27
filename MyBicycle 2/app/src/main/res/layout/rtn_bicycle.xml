@@ -13,8 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="473dp"
+        android:layout_marginBottom="465dp"
         android:ems="10"
         android:format="%s"
         android:textAlignment="center"
@@ -39,8 +38,8 @@
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="204dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="200dp"
         android:contentDescription="@string/profile_button_desc"
         android:src="@drawable/ic_profile" />
 
@@ -49,8 +48,8 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-46.5dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginStart="-48dp"
+        android:layout_marginBottom="100dp"
         android:layout_toEndOf="@id/profile_button"
         android:contentDescription="@string/card_button_desc"
         android:src="@drawable/ic_card" />
@@ -61,19 +60,19 @@
         android:layout_height="48dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="45dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="100dp"
         android:contentDescription="@string/help_button_desc"
         android:src="@drawable/ic_help" />
 
     <Button
         android:id="@+id/rtnButton"
-        android:layout_width="164dp"
+        android:layout_width="wrap_content"
         android:layout_height="69dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="111dp"
-        android:layout_marginBottom="135dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="140dp"
         android:text="Finish Riding"
         android:textSize="18sp" />
 

@@ -62,7 +62,7 @@ public class rtn_bicycle extends AppCompatActivity {
 
     private void showReturnDialog() {
         // Initial message
-        String initialMessage = "You have been riding for " + chronometer.getText().toString() + ". Are you ready to return the bike?";
+        String initialMessage = "You have been riding for " + chronometer.getText().toString() + ".\n Estimated cost: NT$0.\nAre you ready to return the bike?";
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Return Bike")
@@ -87,8 +87,12 @@ public class rtn_bicycle extends AppCompatActivity {
             public void run() {
                 if (alertDialog != null && alertDialog.isShowing()) {
                     String currentTime = chronometer.getText().toString();
-                    alertDialog.setMessage("You have been riding for " + currentTime + ". Are you ready to return the bike?");
-                    handler.postDelayed(this, 10); // Update every second
+                    long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
+                    int hours = (int) (elapsedMillis / 3600000);
+                    int estimatedCost = hours > 0 ? hours * 20 : 0;
+                    String message = "You have been riding for " + currentTime + ".\nEstimated cost: NT$" + estimatedCost + ".\nAre you ready to return the bike?";
+                    alertDialog.setMessage(message);
+                    handler.postDelayed(this, 1000); // Update every second
                 }
             }
         };
