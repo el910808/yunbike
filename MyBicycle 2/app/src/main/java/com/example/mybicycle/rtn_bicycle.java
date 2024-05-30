@@ -88,8 +88,8 @@ public class rtn_bicycle extends AppCompatActivity {
                 if (alertDialog != null && alertDialog.isShowing()) {
                     String currentTime = chronometer.getText().toString();
                     long elapsedMillis = SystemClock.elapsedRealtime() - chronometer.getBase();
-                    int hours = (int) (elapsedMillis / 3600000);
-                    int estimatedCost = hours > 0 ? hours * 20 : 0;
+                    int minutes = (int) (elapsedMillis / 60000);
+                    int estimatedCost = minutes > 0 ? (int)(minutes * 0.33) : 0;
                     String message = "You have been riding for " + currentTime + ".\nEstimated cost: NT$" + estimatedCost + ".\nAre you ready to return the bike?";
                     alertDialog.setMessage(message);
                     handler.postDelayed(this, 10); // Update every second
